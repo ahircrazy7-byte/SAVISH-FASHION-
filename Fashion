@@ -1,0 +1,82 @@
+function toggleMenu() {
+  document.querySelector("header ul").classList.toggle("active");
+}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanFit – Clothing Brand</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">UrbanFit</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Style That Defines You</h1>
+    <p>Premium streetwear & sportswear for the bold.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x350" alt="Sneakers">
+        <h3>Urban Sneakers</h3>
+        <p>$120</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x350" alt="Hoodie">
+        <h3>Classic Hoodie</h3>
+        <p>$75</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x350" alt="T-Shirt">
+        <h3>Logo T-Shirt</h3>
+        <p>$40</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      UrbanFit is a modern clothing brand inspired by street style and sportswear.
+      Our mission is to deliver comfort, style, and confidence to everyone who wears our collection.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 UrbanFit. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
